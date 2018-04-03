@@ -59,8 +59,8 @@ cout << setw(11) << left << "Name" << setw(10) << right << "Girl Rank" << setw(1
 
     string line, var1, var2;
      
-   do{
-       cin >> line;
+while(cin >> line){
+       
    if (line == "")break;      
       ss.clear();
       ss.str(line);
@@ -89,14 +89,15 @@ else if (boyindex == -1) {
 
 
 else if(boyindex != -1 && girlindex != -1){
+        
         cout << setw(11) << left << line << setw(10) << right << girlindex << setw(10) << right << freq     
-   << setw(10) << right << boyindex << setw(10) << right << freq << endl << endl;  
-     
+   << setw(10) << right << boyindex << setw(10) << right << freq << endl << endl;
+        
 }
 
      
       
-}while(getline(cin,line));
+}
 
      
 
